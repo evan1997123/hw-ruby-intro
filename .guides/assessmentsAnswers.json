@@ -1,0 +1,26 @@
+[
+ {
+  "taskId": "test-2550083281",
+  "points": 30,
+  "results": [
+   {
+    "code": 0,
+    "output": "<p>\n<h4>1) BookInStock getters and setters should set ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>2) BookInStock getters and setters should set price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>3) BookInStock getters and setters should be able to change ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>4) BookInStock getters and setters should be able to change price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>5) BookInStock constructor should reject invalid ISBN number [10 points] <span style='color:green'>passed</span></h4>\n<h4>6) BookInStock constructor should reject zero price [10 points] <span style='color:green'>passed</span></h4>\n<h4>7) BookInStock constructor should reject negative price [10 points] <span style='color:green'>passed</span></h4>\n<h4>8) BookInStock #price_as_string should display 33.95 as \"$33.95\" [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>9) BookInStock #price_as_string should display 1.1 as $1.10 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<h4>10) BookInStock #price_as_string should display 20 as $20.00 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (2 for 0)\n\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": 1565796746587,
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-945754669",
+  "points": 30,
+  "results": [
+   {
+    "code": 0,
+    "output": "<p>\n<h4>1) #hello The hello method returns the correct string [30 points] <span style='color:red'>failed</span></h4>\n\nexpected: String\n     got: NilClass\n\n(compared using ==)\n\nDiff:\n@@ -1,2 +1,2 @@\n-String\n+NilClass\n\n\n<h4>2) #starts_with_consonant? classifies true cases [10 points] <span style='color:red'>failed</span></h4>\n'v' is a consonant\n\n<h4>3) #starts_with_consonant? classifies false cases [10 points] <span style='color:green'>passed</span></h4>\n<h4>4) #starts_with_consonant? works on the empty string [5 points] <span style='color:green'>passed</span></h4>\n<h4>5) #starts_with_consonant? works on nonletters [5 points] <span style='color:green'>passed</span></h4>\n<h4>6) #binary_multiple_of_4? classifies valid binary numbers [30 points] <span style='color:red'>failed</span></h4>\nIncorrect results for input: \"1010101010100\"\n\n<h4>7) #binary_multiple_of_4? rejects invalid binary numbers [10 points] <span style='color:green'>passed</span></h4>\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": 1565796755335,
+    "state": "pass"
+   }
+  ]
+ }
+]

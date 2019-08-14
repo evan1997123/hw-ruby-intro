@@ -1,6 +1,6 @@
 [submodule "assignment/hw-ruby-intro"]
 	path = assignment/hw-ruby-intro
 	url = https://github.com/saasbook/hw-ruby-intro.git
-[submodule "teacherFiles/hw-ruby-intro-ci"]
-	path = teacherFiles/hw-ruby-intro-ci
+[submodule ".guides/teacherFiles/hw-ruby-intro-ci"]
+	path = .guides/teacherFiles/hw-ruby-intro-ci
 	url = https://github.com/saasbook/hw-ruby-intro-ci.git
