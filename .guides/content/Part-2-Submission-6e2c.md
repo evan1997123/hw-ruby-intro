@@ -10,4 +10,6 @@ Check the documentation on String and Regexp as they could help tremendously wit
 
 You can check your progress on the all the above by running `$ rspec spec/part2_spec.rb`.
 
+{Run rspec spec/part2_spec.rb | terminal}(rspec assignment/hw-ruby-intro/spec/part2_spec.rb)
+
 {Submit!|assessment}(test-945754669)

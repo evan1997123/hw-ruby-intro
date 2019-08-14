@@ -9,4 +9,6 @@ Include a method `price_as_string` that returns the price of the book formatted 
 
 You can check your progress on the all the above by running `rspec spec/part3_spec.rb`.
 
+{Run rspec spec/part3_spec.rb | terminal}(rspec assignment/hw-ruby-intro/spec/part3_spec.rb)
+
 {Submit!|assessment}(test-2550083281)

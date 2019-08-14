@@ -12,4 +12,6 @@ exercises. :-)
 
 You can check your progress on the all the above by running `$ rspec spec/part1_spec.rb`.
 
+{Run rspec spec/part1_spec.rb | terminal}(rspec assignment/hw-ruby-intro/spec/part1_spec.rb)
+
 {Submit |assessment}(test-1979733178)
