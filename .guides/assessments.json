@@ -6,7 +6,7 @@
    "name": "hw-ruby-intro-part 1",
    "showName": false,
    "instructions": "To submit your solution to Part 1, click the button below.",
-   "command": "bash .guides/grader.sh 1",
+   "command": "bash .guides/secure/grader.sh 1",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "",
@@ -38,7 +38,6 @@
      ".guides/saas_grade.py"
     ],
     "layout": "2-panels-tree",
-    "content": "# 1. Arrays, Hashes, and Enumerables\n\nCheck the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,\n`Hash` and `Enumerable` as they could help tremendously with these\nexercises. :-) \n\n0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb`\n\n0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element. Run associated tests via:  `$ rspec -e '#max_2_sum' spec/part1_spec.rb`\n\n0. Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. `sum_to_n?([], n)` should return false for any value of n, by definition. Run associated tests via:  `$ rspec -e '#sum_to_n' spec/part1_spec.rb` \n\nYou can check your progress on the all the above by running `$ rspec spec/part1_spec.rb`.\n\n<<<<<library-assessment>>>>>\n",
     "opened": [
      {
       "type": "file",
@@ -97,7 +96,7 @@
    "name": "hw-ruby-intro-part 2",
    "showName": false,
    "instructions": "To submit your solution to Part 2, click the button below.",
-   "command": "bash .guides/grader.sh 2",
+   "command": "bash .guides/secure/grader.sh 2",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "",
@@ -129,7 +128,6 @@
      ".guides/saas_grade.py"
     ],
     "layout": "2-panels-tree",
-    "content": "# 2. Strings and Regular Expressions\n\nCheck the documentation on String and Regexp as they could help tremendously with these exercises. :-)\n\n0. Define a method `hello(name)` that takes a string representing a name and returns the string \"Hello, \" concatenated with the name. Run associated tests via:  `$ rspec -e '#hello' spec/part2_spec.rb`\n\n0. Define a method `starts_with_consonant?(s)` that takes a string and returns true if it starts with a consonant and false otherwise. (For our purposes, a consonant is any letter other than A, E, I, O, U.) NOTE: be sure it works for both upper and lower case and for nonletters!  Run associated tests via:  `$ rspec -e '#starts_with_consonant?' spec/part2_spec.rb`\n\n0. Define a method `binary_multiple_of_4?(s)` that takes a string and returns true if the string represents a binary number that is a multiple of 4. NOTE: be sure it returns false if the string is not a valid binary number!  Run associated tests via:  `$ rspec -e '#binary_multiple_of_4?' spec/part2_spec.rb`\n\nYou can check your progress on the all the above by running `$ rspec spec/part2_spec.rb`.\n\n<<<<<library-assessment>>>>>\n",
     "opened": [
      {
       "type": "file",
@@ -152,7 +150,7 @@
    "name": "hw-ruby-intro-part 3",
    "showName": false,
    "instructions": "To submit your solution to Part 3, click the button below.",
-   "command": "bash .guides/grader.sh 3",
+   "command": "bash .guides/secure/grader.sh 3",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "",

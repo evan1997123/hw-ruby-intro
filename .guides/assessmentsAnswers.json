@@ -1,3 +1,108 @@
 [
-
+ {
+  "taskId": "test-1979733178",
+  "points": 0,
+  "results": [
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) Ruby intro part 1 #sum returns correct sum [20 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>2) Ruby intro part 1 #sum works on the empty array [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>3) Ruby intro part 1 #max_2_sum returns the correct sum [7 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>4) Ruby intro part 1 #max_2_sum works even if 2 largest values are the same [3 points] <span style='color:red'>failed</span></h4>\n\nexpected: 6\n     got: nil\n\n(compared using ==)\n\n\n<h4>5) Ruby intro part 1 #max_2_sum returns zero if array is empty [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>6) Ruby intro part 1 #max_2_sum returns value of the element if just one element [10 points] <span style='color:red'>failed</span></h4>\n\nexpected: 3\n     got: nil\n\n(compared using ==)\n\n\n<h4>7) Ruby intro part 1 #sum_to_n returns true when any two elements sum to the second argument [30 points] <span style='color:red'>failed</span></h4>\n\nexpected true\n     got nil\n\n\n<h4>8) Ruby intro part 1 #sum_to_n returns false for any single element array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<h4>9) Ruby intro part 1 #sum_to_n returns false for an empty array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<b><span> Your program got 0 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:31:42.880Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) Ruby intro part 1 #sum returns correct sum [20 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>2) Ruby intro part 1 #sum works on the empty array [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>3) Ruby intro part 1 #max_2_sum returns the correct sum [7 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>4) Ruby intro part 1 #max_2_sum works even if 2 largest values are the same [3 points] <span style='color:red'>failed</span></h4>\n\nexpected: 6\n     got: nil\n\n(compared using ==)\n\n\n<h4>5) Ruby intro part 1 #max_2_sum returns zero if array is empty [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>6) Ruby intro part 1 #max_2_sum returns value of the element if just one element [10 points] <span style='color:red'>failed</span></h4>\n\nexpected: 3\n     got: nil\n\n(compared using ==)\n\n\n<h4>7) Ruby intro part 1 #sum_to_n returns true when any two elements sum to the second argument [30 points] <span style='color:red'>failed</span></h4>\n\nexpected true\n     got nil\n\n\n<h4>8) Ruby intro part 1 #sum_to_n returns false for any single element array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<h4>9) Ruby intro part 1 #sum_to_n returns false for an empty array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<b><span> Your program got 0 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:21:48.175Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "/home/codio/workspace/.guides/secure/hw-ruby-intro-ci/autograder/part1_spec.rb:8: warning: constant ::Fixnum is deprecated\n/home/codio/workspace/.guides/secure/hw-ruby-intro-ci/autograder/part1_spec.rb:25: warning: constant ::Fixnum is deprecated\n<p>\n<h4>1) Ruby Intro part 1 #sum returns correct sum [20 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>2) Ruby Intro part 1 #sum works on the empty array [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>3) Ruby Intro part 1 #max_2_sum returns the correct sum [7 points] <span style='color:red'>failed</span></h4>\nexpected nil to be a kind of Integer\n\n<h4>4) Ruby Intro part 1 #max_2_sum works even if 2 largest values are the same [3 points] <span style='color:red'>failed</span></h4>\n\nexpected: 6\n     got: nil\n\n(compared using ==)\n\n\n<h4>5) Ruby Intro part 1 #max_2_sum returns zero if array is empty [10 points] <span style='color:red'>failed</span></h4>\nexpected  to respond to `zero?`\n\n<h4>6) Ruby Intro part 1 #max_2_sum returns value of the element if just one element [10 points] <span style='color:red'>failed</span></h4>\n\nexpected: 3\n     got: nil\n\n(compared using ==)\n\n\n<h4>7) Ruby Intro part 1 #sum_to_n returns true when any two elements sum to the second argument [30 points] <span style='color:red'>failed</span></h4>\n\nexpected true\n     got nil\n\n\n<h4>8) Ruby Intro part 1 #sum_to_n returns false for the single element array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<h4>9) Ruby Intro part 1 #sum_to_n returns false for the empty array [5 points] <span style='color:red'>failed</span></h4>\n\nexpected false\n     got nil\n\n\n<b><span> Your program got 0 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:15:57.586Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 1,
+    "output": "/usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:495:in `validate_ruby!': Your Ruby version is 2.6.6, but your Gemfile specified 2.2.9 (Bundler::RubyVersionMismatch)\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:470:in `validate_runtime!'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler.rb:101:in `setup'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/setup.rb:20:in `<top (required)>'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\nTraceback (most recent call last):\n  File \"/home/codio/workspace/.guides/secure/saas_grade.py\", line 13, in <module>\n    loaded_json = json.loads(json_data)\n  File \"/usr/lib/python2.7/json/__init__.py\", line 339, in loads\n    return _default_decoder.decode(s)\n  File \"/usr/lib/python2.7/json/decoder.py\", line 364, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/lib/python2.7/json/decoder.py\", line 382, in raw_decode\n    raise ValueError(\"No JSON object could be decoded\")\nValueError: No JSON object could be decoded",
+    "timestamp": "2021-02-28T04:14:23.174Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 1,
+    "output": "/usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:495:in `validate_ruby!': Your Ruby version is 2.6.5, but your Gemfile specified 2.2.9 (Bundler::RubyVersionMismatch)\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:470:in `validate_runtime!'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler.rb:101:in `setup'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/setup.rb:20:in `<top (required)>'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\nTraceback (most recent call last):\n  File \"/home/codio/workspace/.guides/secure/saas_grade.py\", line 13, in <module>\n    loaded_json = json.loads(json_data)\n  File \"/usr/lib/python2.7/json/__init__.py\", line 339, in loads\n    return _default_decoder.decode(s)\n  File \"/usr/lib/python2.7/json/decoder.py\", line 364, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/lib/python2.7/json/decoder.py\", line 382, in raw_decode\n    raise ValueError(\"No JSON object could be decoded\")\nValueError: No JSON object could be decoded",
+    "timestamp": "2021-02-28T04:11:50.782Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 1,
+    "output": ".guides/secure/grader.sh: line 3: cd: .guides/teacherFiles/hw-ruby-intro-ci/: No such file or directory\nTraceback (most recent call last):\n  File \"/home/codio/workspace/.guides/secure/saas_grade.py\", line 13, in <module>\n    loaded_json = json.loads(json_data)\n  File \"/usr/lib/python2.7/json/__init__.py\", line 339, in loads\n    return _default_decoder.decode(s)\n  File \"/usr/lib/python2.7/json/decoder.py\", line 364, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/lib/python2.7/json/decoder.py\", line 382, in raw_decode\n    raise ValueError(\"No JSON object could be decoded\")\nValueError: No JSON object could be decoded",
+    "timestamp": "2021-02-28T04:11:00.968Z",
+    "state": "fail"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 1,
+    "output": "/usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:495:in `validate_ruby!': Your Ruby version is 2.6.5, but your Gemfile specified 2.2.9 (Bundler::RubyVersionMismatch)\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/definition.rb:470:in `validate_runtime!'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler.rb:101:in `setup'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/bundler/setup.rb:20:in `<top (required)>'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\n\tfrom /usr/share/rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require'\nTraceback (most recent call last):\n  File \"/home/codio/workspace/.guides/saas_grade.py\", line 13, in <module>\n    loaded_json = json.loads(json_data)\n  File \"/usr/lib/python2.7/json/__init__.py\", line 339, in loads\n    return _default_decoder.decode(s)\n  File \"/usr/lib/python2.7/json/decoder.py\", line 364, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/lib/python2.7/json/decoder.py\", line 382, in raw_decode\n    raise ValueError(\"No JSON object could be decoded\")\nValueError: No JSON object could be decoded",
+    "timestamp": "2021-02-28T04:03:14.091Z",
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-945754669",
+  "points": 30,
+  "results": [
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) #hello The hello method returns the correct string [30 points] <span style='color:red'>failed</span></h4>\n\nexpected: String\n     got: NilClass\n\n(compared using ==)\n\nDiff:\n@@ -1 +1 @@\n-String\n+NilClass\n\n\n<h4>2) #starts_with_consonant? classifies true cases [10 points] <span style='color:red'>failed</span></h4>\n'v' is a consonant\n\n<h4>3) #starts_with_consonant? classifies false cases [10 points] <span style='color:green'>passed</span></h4>\n<h4>4) #starts_with_consonant? works on the empty string [5 points] <span style='color:green'>passed</span></h4>\n<h4>5) #starts_with_consonant? works on nonletters [5 points] <span style='color:green'>passed</span></h4>\n<h4>6) #binary_multiple_of_4? classifies valid binary numbers [30 points] <span style='color:red'>failed</span></h4>\nIncorrect results for input: \"1010101010100\"\n\n<h4>7) #binary_multiple_of_4? rejects invalid binary numbers [10 points] <span style='color:green'>passed</span></h4>\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:31:48.645Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) #hello The hello method returns the correct string [30 points] <span style='color:red'>failed</span></h4>\n\nexpected: String\n     got: NilClass\n\n(compared using ==)\n\nDiff:\n@@ -1 +1 @@\n-String\n+NilClass\n\n\n<h4>2) #starts_with_consonant? classifies true cases [10 points] <span style='color:red'>failed</span></h4>\n'v' is a consonant\n\n<h4>3) #starts_with_consonant? classifies false cases [10 points] <span style='color:green'>passed</span></h4>\n<h4>4) #starts_with_consonant? works on the empty string [5 points] <span style='color:green'>passed</span></h4>\n<h4>5) #starts_with_consonant? works on nonletters [5 points] <span style='color:green'>passed</span></h4>\n<h4>6) #binary_multiple_of_4? classifies valid binary numbers [30 points] <span style='color:red'>failed</span></h4>\nIncorrect results for input: \"1010101010100\"\n\n<h4>7) #binary_multiple_of_4? rejects invalid binary numbers [10 points] <span style='color:green'>passed</span></h4>\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:21:56.148Z",
+    "state": "pass"
+   }
+  ]
+ },
+ {
+  "taskId": "test-2550083281",
+  "points": 30,
+  "results": [
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) BookInStock getters and setters should set ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>2) BookInStock getters and setters should set price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>3) BookInStock getters and setters should be able to change ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>4) BookInStock getters and setters should be able to change price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>5) BookInStock constructor should reject invalid ISBN number [10 points] <span style='color:green'>passed</span></h4>\n<h4>6) BookInStock constructor should reject zero price [10 points] <span style='color:green'>passed</span></h4>\n<h4>7) BookInStock constructor should reject negative price [10 points] <span style='color:green'>passed</span></h4>\n<h4>8) BookInStock #price_as_string should display 33.95 as \"$33.95\" [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>9) BookInStock #price_as_string should display 1.1 as $1.10 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>10) BookInStock #price_as_string should display 20 as $20.00 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:32:00.665Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<p>\n<h4>1) BookInStock getters and setters should set ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>2) BookInStock getters and setters should set price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>3) BookInStock getters and setters should be able to change ISBN [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>4) BookInStock getters and setters should be able to change price [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>5) BookInStock constructor should reject invalid ISBN number [10 points] <span style='color:green'>passed</span></h4>\n<h4>6) BookInStock constructor should reject zero price [10 points] <span style='color:green'>passed</span></h4>\n<h4>7) BookInStock constructor should reject negative price [10 points] <span style='color:green'>passed</span></h4>\n<h4>8) BookInStock #price_as_string should display 33.95 as \"$33.95\" [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>9) BookInStock #price_as_string should display 1.1 as $1.10 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<h4>10) BookInStock #price_as_string should display 20 as $20.00 [10 points] <span style='color:red'>failed</span></h4>\nwrong number of arguments (given 2, expected 0)\n\n<b><span> Your program got 30 out of 100 points </span></b>\n</p>",
+    "timestamp": "2021-02-28T04:22:07.796Z",
+    "state": "pass"
+   }
+  ]
+ }
 ]

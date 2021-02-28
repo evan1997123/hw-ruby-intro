@@ -2,12 +2,6 @@
  "name": "hw-ruby-intro",
  "children": [
   {
-   "title": "README",
-   "id": "000",
-   "pageId": "000",
-   "type": "page"
-  },
-  {
    "id": "16fbf2b6-b355-1531-60ab-d1ff64cbcd0d",
    "title": "Part 1 Submission",
    "pageId": "1eaf7474-1748-ba3a-51c0-6034bdf51877",

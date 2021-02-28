@@ -1,8 +1,8 @@
 {
  "sections": [
   {
-   "id": "000",
-   "title": "README",
+   "id": "1eaf7474-1748-ba3a-51c0-6034bdf51877",
+   "title": "Part 1 Submission",
    "files": [
     {
      "path": "#tabs",
@@ -15,20 +15,6 @@
     }
    ],
    "layout": "2-panels-tree",
-   "path": [
-    "assignment"
-   ],
-   "type": "markdown",
-   "content-file": "assignment/hw-ruby-intro/README.md",
-   "chapter": false,
-   "reset": [],
-   "teacherOnly": false,
-   "learningObjectives": ""
-  },
-  {
-   "id": "1eaf7474-1748-ba3a-51c0-6034bdf51877",
-   "title": "Part 1 Submission",
-   "files": [],
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Part-1-Submission-1eaf.md",

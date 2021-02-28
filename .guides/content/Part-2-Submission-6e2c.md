@@ -8,7 +8,7 @@ Check the documentation on String and Regexp as they could help tremendously wit
 
 0. Define a method `binary_multiple_of_4?(s)` that takes a string and returns true if the string represents a binary number that is a multiple of 4. NOTE: be sure it returns false if the string is not a valid binary number!  Run associated tests via:  `$ rspec -e '#binary_multiple_of_4?' spec/part2_spec.rb`
 
-You can check your progress on the all the above by running `$ rspec spec/part2_spec.rb`.
+You can check your progress on the all the above by running `$ rspec assignment/hw-ruby-intro/spec/part2_spec.rb`.
 
 {Run rspec spec/part2_spec.rb | terminal}(rspec assignment/hw-ruby-intro/spec/part2_spec.rb)
 
