@@ -1,0 +1,20 @@
+{
+  "root": {
+    "src": "solutions/hw-ruby-intro",
+    "deep-copy": true,
+    "children": [
+      {
+        "lib": {
+          "create": true,
+          "children": [
+            {
+              "ruby_intro.rb": {
+                "src": "starter-code/ruby_intro.rb"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
