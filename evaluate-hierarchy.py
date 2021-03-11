@@ -45,11 +45,6 @@ def createFoldersAndFiles(path, data):
             sourcePath = os.path.join(parentDir, source)
             removeFileOrDirectory(destinationPath)
 
-            if source == "autograder/saas_grader.py":
-                print(source)
-                print(sourcePath)
-                if os.path.isfile(sourcePath):
-                    print("ITS A FILE")
             if os.path.isdir(sourcePath):
                 copyDir(sourcePath, destinationPath)
             elif os.path.isfile(sourcePath):
