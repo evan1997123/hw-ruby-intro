@@ -53,7 +53,6 @@ fi
 
 git checkout -b develop-codio
 
-
 python3 ./.github/workflows/evaluate-hierarchy.py ./build_codio.json
 
 #https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name
