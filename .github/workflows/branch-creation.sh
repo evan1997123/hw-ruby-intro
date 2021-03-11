@@ -29,28 +29,20 @@ find . -mindepth 1 ! -regex "${final_folder}" -delete
 # move everything up one directory
 mv root/* root/.* . && rmdir root
 
-echo "LS AFTER REMOVING"
-ls -A
+git add -A
 
-echo ".gitignore from outside"
-cat .gitignore
+git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
 
+git remote add not-ci ${not_ci_repo_ssh}
 
+git fetch --unshallow not-ci
 
-# git add -A
+if [[ `git branch -r 2>&1` = *not-ci/develop-starter-code* ]]; then
+    echo "pull develop-starter-code"
+    PUSH_OPT=""
+else
+    echo "no need to pull develop-starter-code"
+    PUSH_OPT="-u"
+fi
 
-# git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
-
-# git remote add not-ci ${not_ci_repo_ssh}
-
-# git fetch --unshallow not-ci
-
-# if [[ `git branch -r 2>&1` = *not-ci/develop-starter-code* ]]; then
-#     echo "pull develop-starter-code"
-#     PUSH_OPT=""
-# else
-#     echo "no need to pull develop-starter-code"
-#     PUSH_OPT="-u"
-# fi
-
-# git push -f ${PUSH_OPT} not-ci develop-starter-code
+git push -f ${PUSH_OPT} not-ci develop-starter-code
