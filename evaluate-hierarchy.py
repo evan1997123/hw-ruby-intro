@@ -37,9 +37,14 @@ def createFoldersAndFiles(path, data):
         # deepcopy the folder
         if obj.get("deep-copy", False):
             source = obj["src"]
-            sourcePath = sourcePath = os.path.join(parentDir, source)
+            sourcePath = os.path.join(parentDir, source)
             removeFileOrDirectory(destinationPath)
             copyDir(sourcePath, destinationPath)
+            # if except, then remove that folder
+            if obj.get("except", False):
+                remove = obj["except"]
+                removePath = os.path.join(parentDir, remove)
+                removeFileOrDirectory(removePath)
         # create a new folder
         elif obj.get("create", False):
             removeFileOrDirectory(destinationPath)
