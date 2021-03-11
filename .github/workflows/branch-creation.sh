@@ -27,7 +27,7 @@ mv .git ./root
 find . -mindepth 1 ! -regex "${final_folder}" -delete
 
 # move everything up one directory
-mv root/* root/.* . && rmdir root
+mv root/* root/.[!.]* . && rmdir root
 
 git add -A
 
