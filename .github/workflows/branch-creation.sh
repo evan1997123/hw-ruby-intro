@@ -74,11 +74,10 @@ git add -A
 
 git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
 
-# git remote add not-ci ${not_ci_repo_ssh}
 
 git fetch --unshallow not-ci
 
-if [[ `git branch -r 2>&1` = *not-ci/develop-codio* ]]; then
+if [[ `git branch -r 2>&1` = *origin/develop-codio* ]]; then
     echo "pull develop-codio"
     PUSH_OPT=""
 else
@@ -86,5 +85,5 @@ else
     PUSH_OPT="-u"
 fi
 
-git push -f ${PUSH_OPT} not-ci develop-codio
+git push -f ${PUSH_OPT} origin develop-codio
 
