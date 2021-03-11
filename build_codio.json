@@ -49,7 +49,7 @@
                   },
                   {
                     "saas_grade.py": {
-                      "src": "autograder/saas_grader.py"
+                      "src": "autograder/saas_grade.py"
                     }
                   },
                   {
