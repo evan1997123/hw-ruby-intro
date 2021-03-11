@@ -44,19 +44,21 @@ def createFoldersAndFiles(path, data):
             source = obj["src"]
             sourcePath = os.path.join(parentDir, source)
             removeFileOrDirectory(destinationPath)
+
+            if source == "autograder/saas_grader.py":
+                print(source)
+                print(sourcePath)
             if os.path.isdir(sourcePath):
                 copyDir(sourcePath, destinationPath)
             elif os.path.isfile(sourcePath):
                 shutil.copyfile(sourcePath, destinationPath)
 
+            # grab the last filename or directory, and then remove that from just copied folder
             if obj.get("except", False):
-                print(obj["except"])
                 except_array = obj["except"]
                 for given_remove in except_array:
-                    print(given_remove)
                     remove = re.search(r"/([^\/]+)$", given_remove).group(1)
                     removePath = os.path.join(destinationPath, remove)
-                    print(removePath)
                     removeFileOrDirectory(removePath)
 
         if "children" in obj:
