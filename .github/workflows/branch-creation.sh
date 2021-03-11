@@ -2,19 +2,11 @@
 
 source ./.github/CHIPS-config.sh
 
-git branch -a
-# if [[ `git branch -a 2>&1` = *develop-starter-code* ]]; then
-#     echo "no need to create a new branch"
-# else
-#     echo "need to create new branch"
-#     git branch develop-starter-code 
-# fi
-if ! [[`git subtree pull --prefix .github/workflows/ https://github.com/evan1997123/chips_github_workflows.git master --squash 2>&1` = *Already up to date* ]]; then
+if ! [[ `git subtree pull --prefix .github/workflows/ https://github.com/evan1997123/chips_github_workflows.git master --squash 2>&1` = *"Subtree is already at commit"* ]]; then
     echo "need to pull"
     git push origin develop
     exit
 fi
-
 
 git checkout -b develop-starter-code
 
