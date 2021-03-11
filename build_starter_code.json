@@ -1,6 +1,6 @@
 {
   "root": {
-    "src": "solutions/hw-ruby-intro",
+    "src": "solutions",
     "deep-copy": true,
     "children": [
       {
