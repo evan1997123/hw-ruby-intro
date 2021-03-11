@@ -19,7 +19,7 @@ echo "LS BEFORE REMOVING"
 ls -A
 
 echo "what is inside final_folder"
-ls ${final_folder}
+ls ${final_folder} -A
 
 echo "what is inside ."
 
