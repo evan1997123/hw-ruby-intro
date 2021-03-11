@@ -43,10 +43,6 @@ fi
 
 git push -f ${PUSH_OPT} not-ci develop-starter-code
 
-# # !/bin/bash
-
-# source ./.github/CHIPS-config.sh
-
 git checkout develop
 
 git branch -a
@@ -59,20 +55,12 @@ fi
 
 git checkout develop-codio
 
-echo "LS before anything"
-ls -A
 
 python3 ./.github/workflows/evaluate-hierarchy.py ./build_codio.json
 
 #https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name
-echo "LS AFTER script and BEFORE REMOVING"
-ls -A
 
-echo "finding .settings, which shouldn't exist"
-find . -name .settings
 
-# echo "what is inside final_folder"
-# ls ${final_folder} -A
 # move .git into root folder
 mv .git ./root
 
@@ -81,9 +69,6 @@ find . -mindepth 1 ! -regex "${final_folder}" -delete
 
 # move everything up one directory
 mv root/* root/.[!.]* . && rmdir root
-
-echo "LS AFTER script and AFTER REMOVING"
-ls -A
 
 git add -A
 
