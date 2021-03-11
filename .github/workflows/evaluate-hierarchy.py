@@ -40,11 +40,12 @@ def createFoldersAndFiles(path, data):
             sourcePath = os.path.join(parentDir, source)
             removeFileOrDirectory(destinationPath)
             copyDir(sourcePath, destinationPath)
-            # if except, then remove that folder
+            # if except, then remove file(s)/folder(s)
             if obj.get("except", False):
-                remove = obj["except"]
-                removePath = os.path.join(parentDir, remove)
-                removeFileOrDirectory(removePath)
+                except_array = obj["except"]
+                for remove in except_array:
+                    removePath = os.path.join(parentDir, remove)
+                    removeFileOrDirectory(removePath)
         # create a new folder
         elif obj.get("create", False):
             removeFileOrDirectory(destinationPath)
