@@ -21,7 +21,7 @@ ls -A
 # echo "what is inside final_folder"
 # ls ${final_folder} -A
 
-find . -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete
+find . -mindepth 1 ! -regex "${final_folder}" -delete
 
 echo "LS AFTER REMOVING"
 ls -A
