@@ -5,7 +5,6 @@ import collections.abc
 import shutil
 import errno
 import sys
-import subprocess
 
 # https://stackoverflow.com/questions/1868714/how-do-i-copy-an-entire-directory-of-files-into-an-existing-directory-using-pyth
 
@@ -50,12 +49,14 @@ def createFoldersAndFiles(path, data):
                 shutil.copyfile(sourcePath, destinationPath)
 
             if obj.get("except", False):
+                print(obj["except"])
                 except_array = obj["except"]
                 for remove in except_array:
+                    print(remove)
                     removePath = os.path.join(parentDir, remove)
+                    print(removePath)
                     removeFileOrDirectory(removePath)
 
-        subprocess.run(["ls", "-A"])
         if "children" in obj:
             for child in obj["children"]:
                 createFoldersAndFiles(destinationPath, child)
