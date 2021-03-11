@@ -32,6 +32,16 @@ mv root/* .
 echo "LS AFTER REMOVING"
 ls -A
 
+echo ".gitignore from outside"
+cat .gitignore
+
+echo "inside root"
+cd root
+ls -A
+
+echo ".gitignore from inside"
+cat .gitignore
+
 
 # git add -A
 
