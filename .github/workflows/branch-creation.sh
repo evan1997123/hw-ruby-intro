@@ -79,6 +79,9 @@ find . -mindepth 1 ! -regex "${final_folder}" -delete
 # move everything up one directory
 mv root/* root/.[!.]* . && rmdir root
 
+echo "LS AFTER script and AFTER REMOVING"
+ls -A
+
 git add -A
 
 git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
