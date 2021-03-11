@@ -60,7 +60,7 @@ def createFoldersAndFiles(path, data):
                     removePath = os.path.join(destinationPath, remove)
                     removeFileOrDirectory(removePath)
 
-        subprocess.run(["ls", "-l"])
+        subprocess.run(["ls", "-A"])
         if "children" in obj:
             for child in obj["children"]:
                 createFoldersAndFiles(destinationPath, child)
