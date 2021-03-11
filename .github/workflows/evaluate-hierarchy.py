@@ -35,18 +35,6 @@ def createFoldersAndFiles(path, data):
         destination = str(folderOrFilename)
         destinationPath = os.path.join(path, destination)
 
-        # # deepcopy the folder
-        # if obj.get("deep-copy", False):
-        #     source = obj["src"]
-        #     sourcePath = os.path.join(parentDir, source)
-        #     removeFileOrDirectory(destinationPath)
-        #     copyDir(sourcePath, destinationPath)
-        #     # if except, then remove file(s)/folder(s)
-        #     if obj.get("except", False):
-        #         except_array = obj["except"]
-        #         for remove in except_array:
-        #             removePath = os.path.join(parentDir, remove)
-        #             removeFileOrDirectory(removePath)
         # create a new folder
         if obj.get("create", False):
             removeFileOrDirectory(destinationPath)
@@ -66,7 +54,6 @@ def createFoldersAndFiles(path, data):
                 for remove in except_array:
                     removePath = os.path.join(parentDir, remove)
                     removeFileOrDirectory(removePath)
-            # shutil.copyfile(sourcePath, destinationPath)
 
         subprocess.run(["ls", "-A"])
         if "children" in obj:
