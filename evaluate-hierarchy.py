@@ -56,9 +56,9 @@ def createFoldersAndFiles(path, data):
             source = obj["src"]
             sourcePath = os.path.join(parentDir, source)
             removeFileOrDirectory(destinationPath)
-            if os.path.isdir(destinationPath):
+            if os.path.isdir(sourcePath):
                 copyDir(sourcePath, destinationPath)
-            elif os.path.isfile(destinationPath):
+            elif os.path.isfile(sourcePath):
                 shutil.copyfile(sourcePath, destinationPath)
 
             if obj.get("except", False):
@@ -66,9 +66,9 @@ def createFoldersAndFiles(path, data):
                 for remove in except_array:
                     removePath = os.path.join(parentDir, remove)
                     removeFileOrDirectory(removePath)
-            subprocess.run(["ls", "-A"])
             # shutil.copyfile(sourcePath, destinationPath)
 
+        subprocess.run(["ls", "-A"])
         if "children" in obj:
             for child in obj["children"]:
                 createFoldersAndFiles(destinationPath, child)
