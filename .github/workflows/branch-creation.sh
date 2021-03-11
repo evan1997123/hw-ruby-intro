@@ -68,6 +68,9 @@ python3 ./.github/workflows/evaluate-hierarchy.py ./build_codio.json
 echo "LS AFTER script and BEFORE REMOVING"
 ls -A
 
+echo "finding .settings, which shouldn't exist"
+find . -name .settings
+
 # echo "what is inside final_folder"
 # ls ${final_folder} -A
 # move .git into root folder
