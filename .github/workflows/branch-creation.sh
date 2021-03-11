@@ -45,8 +45,7 @@ git push -f ${PUSH_OPT} not-ci develop-starter-code
 
 git checkout develop
 
-git branch -a
-if [[ `git branch -a 2>&1` = *develop-codio* ]]; then
+if [[ `git branch 2>&1` = *develop-codio* ]]; then
     echo "no need to create a new branch"
     git branch -d develop-codio
 fi
@@ -70,9 +69,6 @@ mv root/* root/.[!.]* . && rmdir root
 git add -A
 
 git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
-
-
-git fetch --unshallow not-ci
 
 if [[ `git branch -r 2>&1` = *origin/develop-codio* ]]; then
     echo "pull develop-codio"
