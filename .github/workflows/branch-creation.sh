@@ -3,14 +3,14 @@
 source ./.github/CHIPS-config.sh
 
 git branch -a
-if [[ `git branch -a 2>&1` = *develop-starter-code* ]]; then
-    echo "no need to create a new branch"
-else
-    echo "need to create new branch"
-    git branch develop-starter-code
-fi
+# if [[ `git branch -a 2>&1` = *develop-starter-code* ]]; then
+#     echo "no need to create a new branch"
+# else
+#     echo "need to create new branch"
+#     git branch develop-starter-code
+# fi
 
-git checkout develop-starter-code
+git checkout -b develop-starter-code
 
 python3 ./.github/workflows/evaluate-hierarchy.py ./build_starter_code.json
 
@@ -48,12 +48,10 @@ git checkout develop
 git branch -a
 if [[ `git branch -a 2>&1` = *develop-codio* ]]; then
     echo "no need to create a new branch"
-else
-    echo "need to create new branch"
-    git branch develop-codio
+    git branch -d develop-codio
 fi
 
-git checkout develop-codio
+git checkout -b develop-codio
 
 
 python3 ./.github/workflows/evaluate-hierarchy.py ./build_codio.json
