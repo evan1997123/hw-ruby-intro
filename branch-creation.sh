@@ -18,14 +18,11 @@ python3 ./.github/workflows/evaluate-hierarchy.py ./build_starter_code.json
 echo "LS BEFORE REMOVING"
 ls -A
 
-echo "what is inside final_folder"
-ls ${final_folder} -A
+# echo "what is inside final_folder"
+# ls ${final_folder} -A
 
-echo "what is inside ."
+find . -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete
 
-ls .
-
-# find ./ -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete
 echo "LS AFTER REMOVING"
 ls -A
 
