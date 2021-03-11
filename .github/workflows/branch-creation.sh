@@ -20,18 +20,17 @@ ls -A
 
 # echo "what is inside final_folder"
 # ls ${final_folder} -A
+# move .git into root folder
+mv .git ./root
 
+# remove everything by root folder
 find . -mindepth 1 ! -regex "${final_folder}" -delete
+
+# move everything up one directory
+mv root/* .
 
 echo "LS AFTER REMOVING"
 ls -A
-
-cd root
-
-echo "inside root"
-ls -A
-
-cat .gitignore
 
 
 # git add -A
