@@ -28,20 +28,26 @@ ls -A
 
 cd root
 
-git add -A
+echo "inside root"
+ls -A
 
-git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
+cat .gitignore
 
-git remote add not-ci ${not_ci_repo_ssh}
 
-git fetch --unshallow not-ci
+# git add -A
 
-if [[ `git branch -r 2>&1` = *not-ci/develop-starter-code* ]]; then
-    echo "pull develop-starter-code"
-    PUSH_OPT=""
-else
-    echo "no need to pull develop-starter-code"
-    PUSH_OPT="-u"
-fi
+# git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "${commit_message}" --author="$CURRENT_USER <$CURRENT_USER@users.noreply.github.com>"
 
-git push -f ${PUSH_OPT} not-ci develop-starter-code
+# git remote add not-ci ${not_ci_repo_ssh}
+
+# git fetch --unshallow not-ci
+
+# if [[ `git branch -r 2>&1` = *not-ci/develop-starter-code* ]]; then
+#     echo "pull develop-starter-code"
+#     PUSH_OPT=""
+# else
+#     echo "no need to pull develop-starter-code"
+#     PUSH_OPT="-u"
+# fi
+
+# git push -f ${PUSH_OPT} not-ci develop-starter-code
