@@ -9,10 +9,10 @@ git branch -a
 #     echo "need to create new branch"
 #     git branch develop-starter-code 
 # fi
-if ! [[`git subtree pull --prefix .github/workflows/ https://github.com/evan1997123/chips_github_workflows.git master --squash -m \"Pulling changes from upstream github workflow repo\" 2>&1`= *Already up to date* ]]; then
+if ! [[`git subtree pull --prefix .github/workflows/ https://github.com/evan1997123/chips_github_workflows.git master --squash 2>&1`= *Already up to date* ]]; then
     echo "need to pull"
     git push origin develop
-    return
+    exit
 fi
 
 
