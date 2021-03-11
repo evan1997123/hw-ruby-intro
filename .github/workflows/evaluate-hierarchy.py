@@ -34,28 +34,38 @@ def createFoldersAndFiles(path, data):
         destination = str(folderOrFilename)
         destinationPath = os.path.join(path, destination)
 
-        # deepcopy the folder
-        if obj.get("deep-copy", False):
-            source = obj["src"]
-            sourcePath = os.path.join(parentDir, source)
+        # # deepcopy the folder
+        # if obj.get("deep-copy", False):
+        #     source = obj["src"]
+        #     sourcePath = os.path.join(parentDir, source)
+        #     removeFileOrDirectory(destinationPath)
+        #     copyDir(sourcePath, destinationPath)
+        #     # if except, then remove file(s)/folder(s)
+        #     if obj.get("except", False):
+        #         except_array = obj["except"]
+        #         for remove in except_array:
+        #             removePath = os.path.join(parentDir, remove)
+        #             removeFileOrDirectory(removePath)
+        # create a new folder
+        if obj.get("create", False):
             removeFileOrDirectory(destinationPath)
-            copyDir(sourcePath, destinationPath)
-            # if except, then remove file(s)/folder(s)
+            os.mkdir(destinationPath)
+        # deep-copy the file or folder, remove any excepts
+        elif "src" in obj:
+            source = obj["src"]
+            sourcePath = sourcePath = os.path.join(parentDir, source)
+            removeFileOrDirectory(destinationPath)
+            if os.path.isdir(destinationPath):
+                copyDir(sourcePath, destinationPath)
+            elif os.path.isfile(destinationPath):
+                shutil.copyfile(sourcePath, destinationPath)
+
             if obj.get("except", False):
                 except_array = obj["except"]
                 for remove in except_array:
                     removePath = os.path.join(parentDir, remove)
                     removeFileOrDirectory(removePath)
-        # create a new folder
-        elif obj.get("create", False):
-            removeFileOrDirectory(destinationPath)
-            os.mkdir(destinationPath)
-        # copy the file
-        elif "src" in obj:
-            source = obj["src"]
-            sourcePath = sourcePath = os.path.join(parentDir, source)
-            removeFileOrDirectory(destinationPath)
-            shutil.copyfile(sourcePath, destinationPath)
+            # shutil.copyfile(sourcePath, destinationPath)
 
         if "children" in obj:
             for child in obj["children"]:
