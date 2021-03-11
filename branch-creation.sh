@@ -27,7 +27,7 @@ mv .git ./root
 find . -mindepth 1 ! -regex "${final_folder}" -delete
 
 # move everything up one directory
-mv root/* .
+mv root/.* . && rmdir myfolder
 
 echo "LS AFTER REMOVING"
 ls -A
@@ -35,12 +35,6 @@ ls -A
 echo ".gitignore from outside"
 cat .gitignore
 
-echo "inside root"
-cd root
-ls -A
-
-echo ".gitignore from inside"
-cat .gitignore
 
 
 # git add -A
