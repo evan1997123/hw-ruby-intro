@@ -12,7 +12,7 @@ fi
 
 git checkout develop-starter-code
 
-python3 ./.github/workflows/evaluate-hierarchy.py ./build-starter-code.json
+python3 ./.github/workflows/evaluate-hierarchy.py ./build_starter_code.json
 
 #https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name
 echo "LS BEFORE REMOVING"
