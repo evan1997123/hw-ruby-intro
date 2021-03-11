@@ -12,17 +12,22 @@ fi
 
 git checkout develop-starter-code
 
-python3 ./.github/workflows/evaluate-hierarchy.py ./starter-code/build-starter-code.json
+python3 ./.github/workflows/evaluate-hierarchy.py ./build-starter-code.json
 
 #https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name
 echo "LS BEFORE REMOVING"
 ls -A
 
+echo "what is inside final_folder"
+ls ${final_folder}
+
+echo "what is inside ."
+
+ls .
 
 # find ./ -mindepth 1 ! -regex '^./myfolder/test2\(/.*\)?' -delete
 echo "LS AFTER REMOVING"
 ls -A
-
 
 git add -A
 
