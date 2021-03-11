@@ -4,6 +4,7 @@ source ./.github/CHIPS-config.sh
 
 if ! [[ `git subtree pull --prefix .github/workflows/ https://github.com/evan1997123/chips_github_workflows.git master --squash 2>&1` = *"Subtree is already at commit"* ]]; then
     echo "need to pull"
+    git status
     git push origin develop
     exit
 fi
@@ -12,7 +13,7 @@ git checkout -b develop-starter-code
 
 python3 ./.github/workflows/evaluate-hierarchy.py ./build_starter_code.json
 
-#https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name
+#https://unix.stackexchange.com/questions/422392/delete-all-folders-inside-a-folder-except-one-with-specific-name 
 
 # move .git into root folder
 mv .git ./root
